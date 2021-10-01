@@ -36,20 +36,37 @@
  * @return {number[]}
  */
 
-//SOLUTION
-const twoSum = (nums, target) => {
-	let result = [];
+//SOLUTION -1 
+// const twoSum = (nums, target) => {
+// 	let result = [];
 
-	for (let i = 0; i < arr.length; i++) {
-		for (let j = i + 1; j < arr.length; j++) {
-			if (arr[i] + arr[j] === target) {
-				result.push(i);
-				result.push(j);
-			}
-		}
-	}
-	return result;
-}
+// 	for (let i = 0; i < arr.length; i++) {
+// 		for (let j = i + 1; j < arr.length; j++) {
+// 			if (arr[i] + arr[j] === target) {
+// 				result.push(i);
+// 				result.push(j);
+// 			}
+// 		}
+// 	}
+// 	return result;
+// }
+
+//solution -2 better approach
+
+const twoSum = function(nums, target) {
+    const indices = new Map();
+
+    for (let index = 0; index < nums.length; index++) {
+        const complement = target - nums[index];
+
+        if (indices.has(complement)) {
+            return [indices.get(complement), index]
+        }
+
+        indices.set(nums[index], index)
+    }
+};
+
 
  console.log(twoSum([2,7,11,15],9))
  console.log(twoSum([2,3,1,11],14))
