@@ -29,6 +29,10 @@ body {
     padding-top:50px;
 
 }
+.topic-section {
+    margin-top: 20px;
+}
+
 .list-section-topic-heading {
     font-family: 'Inter', sans-serif;
 }
