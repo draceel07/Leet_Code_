@@ -1,2 +1,2 @@
-# Leet_Code-Javascript
-Leet code problem solving.. In Javascript
+# Leet_Code
+Leet code problem solving.. 
