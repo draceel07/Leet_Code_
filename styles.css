@@ -94,6 +94,10 @@ body.night
     text-decoration: none;
     padding: 10px;
 }
+a:visited
+{
+    color:blue;
+}
 .list-bubble a:hover {
     border-radius: 20px;
     background-color:#35353d ;
